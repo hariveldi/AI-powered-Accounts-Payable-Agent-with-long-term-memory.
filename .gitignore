@@ -1,0 +1,15 @@
+node_modules/
+.venv/
+client/dist/
+client/.env*
+.env
+.env.*
+!.env.example
+server/.env
+server/.env.*
+!.env.example
+eng.traineddata
+hindsight_debug.mjs
+verify-live.mjs
+invoice_*.pdf
+invoice_*.png

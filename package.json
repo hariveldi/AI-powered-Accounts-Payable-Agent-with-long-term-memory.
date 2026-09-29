@@ -1,0 +1,17 @@
+{
+  "name": "invoice-ai-agent",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c green,cyan \"npm:dev --workspace=server\" \"npm:dev --workspace=client\"",
+    "build": "npm run build --workspace=client",
+    "lint": "npm run lint --workspace=client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
